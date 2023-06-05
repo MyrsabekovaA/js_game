@@ -105,7 +105,7 @@ class Game {
                 resultMessage = 'It\'s a draw';
             }
             console.log(resultMessage);
-            console.log(`HMAC: ${this.hmacGenerator.computeHmac(RULES[computerMoveIndex])}`);
+            console.log(`HMAC key: ${this.hmacGenerator.key}`);
 
             if (playerAvailableMoves.length === 0) {
                 console.log(`Final score: Player - ${this.playerScore}, Computer - ${this.computerScore}`);
